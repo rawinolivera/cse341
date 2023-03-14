@@ -1,0 +1,23 @@
+{
+    "contact": {
+      "firstName": "Mile",
+      "lastName": "Torres",
+      "email": "milexa.torres@gmail.com",
+      "favoriteColor": "Green",
+      "birthday": "01/16/1993"
+    },
+    "contact2": {
+      "firstName": "Rawin",
+      "lastName": "Olivera",
+      "email": "rawin.olivera@gmail.com",
+      "favoriteColor": "Blue",
+      "birthday": "05/17/1990"
+    },
+    "contact3": {
+      "firstName": "Yanitza",
+      "lastName": "Torbello",
+      "email": "yanitza.torbello@gmail.com",
+      "favoriteColor": "Orange",
+      "birthday": "12/10/1970"
+    }
+  }
