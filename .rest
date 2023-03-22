@@ -5,3 +5,34 @@ GET http://localhost:3000/awesome HTTP/1.1
 
 ###
 GET https://cse341-848t.onrender.com/ HTTP/1.1
+
+###
+POST http://localhost:8080/contacts
+Content-Type: application/json
+
+{
+    "firstName": "Reyssy",
+    "lastName": "Olivera",
+    "email": "reyssy.olivera@gmail.com",
+    "favoriteColor": "Purple",
+    "birthday": "06/11/1985"
+}
+
+###
+GET http://localhost:8080/contacts/641b52fcd167628a1f4abb9b
+
+
+###
+PUT http://localhost:8080/contacts/641b52fcd167628a1f4abb9b
+Content-Type: application/json
+
+{
+    "firstName": "Reyssy",
+    "lastName": "Olivera",
+    "email": "reyssy.olivera@gmail.com",
+    "favoriteColor": "yellow",
+    "birthday": "06/11/1985"
+}
+
+###
+DELETE http://localhost:8080/contacts/641b52fcd167628a1f4abb9b
