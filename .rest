@@ -23,16 +23,16 @@ GET http://localhost:8080/contacts/641b52fcd167628a1f4abb9b
 
 
 ###
-PUT http://localhost:8080/contacts/641b52fcd167628a1f4abb9b
+PUT http://localhost:8080/contacts/641b6d842bf80c9147380cd4
 Content-Type: application/json
 
 {
-    "firstName": "Reyssy",
+    "firstName": "Yani",
     "lastName": "Olivera",
-    "email": "reyssy.olivera@gmail.com",
-    "favoriteColor": "yellow",
-    "birthday": "06/11/1985"
+    "email": "yani.olivera@gmail.com",
+    "favoriteColor": "pink",
+    "birthday": "11/16/1986"
 }
 
 ###
-DELETE http://localhost:8080/contacts/641b52fcd167628a1f4abb9b
+DELETE http://localhost:8080/contacts/641b6d842bf80c9147380cd4

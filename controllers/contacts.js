@@ -1,6 +1,7 @@
-const mongodb = require('../db/connect');
+const mongodb = require("../db/connect");
 const ObjectId = require('mongodb').ObjectId;
 
+//get request for all (read)
 const getAll = async (req, res, next) => {
   const result = await mongodb.getDb().db('contacts').collection('contacts').find();
   result.toArray().then((lists) => {
@@ -9,6 +10,8 @@ const getAll = async (req, res, next) => {
   });
 };
 
+
+//get request for single (read)
 const getSingle = async (req, res, next) => {
   const userId = new ObjectId(req.params.id);
   const result = await mongodb
@@ -22,7 +25,7 @@ const getSingle = async (req, res, next) => {
   });
 };
 
-// post request
+// post request )(create)
 const newContact = async (req, res, next) => {
   const contact = {
     firstName: req.body.firstName,
@@ -43,7 +46,7 @@ const newContact = async (req, res, next) => {
   }
 }
 
-//put request
+//put request (update)
 const updateContact = async (req, res, next) => {
   const contactId = new ObjectId(req.params.id);
   const contact = {
@@ -65,7 +68,7 @@ const updateContact = async (req, res, next) => {
   }
 }
 
-//delete request
+//delete request (delete)
 const deleteContact = async (req, res, next) => {
   const contactId = new ObjectId(req.params.id);
   const response = await mongodb
