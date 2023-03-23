@@ -4,7 +4,7 @@ const doc = {
     title: "Contacs",
     description: "Rawin's Contacts",
   },
-  host: "https://cse341-848t.onrender.com",
+  host: "cse341-848t.onrender.com",
   schemes: ["https"],
 };
 
