@@ -23,7 +23,7 @@ GET http://localhost:8080/contacts/641b52fcd167628a1f4abb9b
 
 
 ###
-PUT http://localhost:8080/contacts/641b6d842bf80c9147380cd4
+PUT http://localhost:8080/contacts/641b52fcd167628a1f4abb9b
 Content-Type: application/json
 
 {
@@ -35,4 +35,4 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:8080/contacts/641b6d842bf80c9147380cd4
+DELETE http://localhost:8080/contacts/641b52fcd167628a1f4abb9b
